@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/pref"
+    tools:context=".perferences3">
+
+    <ScrollView
+        android:id="@+id/homeScroll3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:isScrollContainer="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView33"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="60dp"
+                android:layout_marginStart="20dp"
+                android:text="Select your Meal... "
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="40dp"
+                android:layout_marginEnd="40dp"
+                android:layout_marginTop="90dp"
+
+                android:id="@+id/RGroup3">
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:background="@drawable/breakfast"
+                    android:button="@android:color/transparent"
+                    android:id="@+id/c13"/>
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:background="@drawable/midmor"
+                    android:button="@android:color/transparent"
+                    android:layout_marginTop="40dp"
+                    android:id="@+id/c23"/>
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:background="@drawable/lunch"
+                    android:button="@android:color/transparent"
+                    android:layout_marginTop="40dp"
+                    android:id="@+id/c33" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:background="@drawable/midafter"
+                    android:button="@android:color/transparent"
+                    android:layout_marginTop="40dp"
+                    android:id="@+id/c43"/>
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:background="@drawable/dinner"
+                    android:button="@android:color/transparent"
+                    android:layout_marginTop="40dp"
+                    android:id="@+id/c53"/>
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:background="@drawable/desserts"
+                    android:button="@android:color/transparent"
+                    android:layout_marginTop="40dp"
+                    android:id="@+id/c63"/>
+
+
+            </RadioGroup>
+
+            <Button
+                android:id="@+id/done3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:layout_marginStart="142dp"
+                android:layout_marginEnd="142dp"
+                android:backgroundTint="#f2d129"
+                android:text="Next"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/c63"
+                app:cornerRadius="10dp"
+                />
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

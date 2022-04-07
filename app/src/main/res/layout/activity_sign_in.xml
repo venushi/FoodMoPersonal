@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignIn"
+    android:background="@drawable/bg"
+
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content">
+
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="207dp"
+            android:layout_height="166dp"
+            app:srcCompat="@drawable/signuppic"
+            android:layout_marginTop="62dp"
+            android:layout_marginLeft="103dp"
+            android:layout_marginRight="103dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="450dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:id="@+id/llsi1">
+
+            <TextView
+                android:id="@+id/textViewsi2"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="User Name :"
+                android:textSize="16dp"
+                android:textStyle="bold"/>
+
+            <EditText
+                android:id="@+id/editTextTextPersonNamesi2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:inputType="textPersonName"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:id="@+id/llsi2"
+            android:layout_below="@+id/llsi1">
+
+            <TextView
+                android:id="@+id/textViewsi3"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Password :"
+                android:textSize="16dp"
+                android:textStyle="bold"/>
+
+            <EditText
+                android:id="@+id/editTextTextPersonNamesi3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:inputType="textPassword"
+                />
+        </LinearLayout>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#F2D129"
+            app:cornerRadius="20dp"
+            android:text="Sign In"
+            android:textColor="@color/black"
+            android:layout_centerHorizontal="true"
+            android:paddingHorizontal="50dp"
+            android:layout_below="@+id/llsi2"
+            android:layout_marginTop="20dp"
+            android:id="@+id/signin"
+
+            ></Button>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#F2D129"
+            app:cornerRadius="20dp"
+            android:text="Sign Up"
+            android:textColor="@color/black"
+            android:layout_centerHorizontal="true"
+            android:paddingHorizontal="50dp"
+            android:layout_below="@+id/signin"
+            android:layout_marginTop="10dp"
+            android:id="@+id/already"
+            android:onClick="gotosup"
+
+            ></Button>
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:id="@+id/forgetpw"
+            android:layout_width="match_parent"
+            android:layout_below="@+id/already"
+            android:text="Forget Password?"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal" />
+
+        <ProgressBar
+            android:id="@+id/progressBarSignin"
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:visibility="gone"
+            tools:ignore="MissingConstraints"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"/>
+
+
+
+
+
+
+    </RelativeLayout>
+</ScrollView>

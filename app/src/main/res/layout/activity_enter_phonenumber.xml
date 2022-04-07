@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EnterPhonenumber"
+    android:background="@drawable/bg">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="207dp"
+        android:layout_height="166dp"
+        app:srcCompat="@drawable/signuppic"
+        android:layout_marginTop="62dp"
+        android:layout_marginLeft="103dp"
+        android:layout_marginRight="103dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="400dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:id="@+id/lle1">
+
+        <Spinner
+            android:id="@+id/spinnerCountries"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"/>
+
+        <EditText
+            android:id="@+id/editTextTextPersonNamee1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:hint="Enter your Phone number"
+            android:textColorHint="@color/black"
+            android:inputType="textPersonName"
+            />
+    </LinearLayout>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#F2D129"
+        app:cornerRadius="20dp"
+        android:text="Continue"
+        android:textColor="@color/black"
+        android:layout_centerHorizontal="true"
+        android:paddingHorizontal="50dp"
+        android:layout_below="@+id/lle1"
+        android:layout_marginTop="20dp"
+        android:id="@+id/con"
+
+        ></Button>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#F2D129"
+        app:cornerRadius="20dp"
+        android:text="skip"
+        android:textColor="@color/black"
+        android:layout_centerHorizontal="true"
+        android:paddingHorizontal="50dp"
+        android:layout_below="@+id/con"
+        android:layout_marginTop="20dp"
+        android:id="@+id/skip"
+        android:onClick="skip"
+
+        ></Button>
+
+
+</RelativeLayout>
